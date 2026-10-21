@@ -1,0 +1,2331 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/14/2026 5:26:56 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FERUM-INFERIOR"
+  DTS:CreatorName="FERUM-INFERIOR\crush"
+  DTS:DTSID="{E418C83E-0F5A-4118-AEBD-FF5686FE15A1}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="10250"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{543A9799-8C7C-4227-89AD-DE754FC13894}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{41285D6D-DCFE-40EE-9269-1E381F3E8156}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="10250"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\crush\Downloads\matriculado_2025_II.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_INEI"
+              DTS:DTSID="{7269F127-F685-450E-87BB-AB9AFFC06290}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE_ENTIDAD"
+              DTS:DTSID="{FC0CC0F0-886D-461F-8B50-A8523F913B7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO_ENTIDAD"
+              DTS:DTSID="{4F20F7E1-F267-43E2-BAE6-E458FC7190CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO_GESTION"
+              DTS:DTSID="{3D0D8A4E-8BE6-4D6C-A46D-29D52463ADDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO_CONSTITUCION"
+              DTS:DTSID="{885FE2C6-FF5C-407C-9C63-3F478B491D7F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LICENCIA"
+              DTS:DTSID="{C308FFB3-5692-4FBE-BC94-A8ECA3E34E2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERIODO"
+              DTS:DTSID="{FB9AE712-8B1D-4F07-9ADC-B59D48C00DE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERIODO_ESTANDARIZADO"
+              DTS:DTSID="{230F01A7-0913-42BB-82D4-AECD04B6B45E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NIVEL_ACADEMICO"
+              DTS:DTSID="{70ECF65E-2257-4971-BC8A-3CEA105BE9C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PERIODO_LECTIVO"
+              DTS:DTSID="{36FCE92C-E2BD-4D3C-8ADE-DD1C8A2EB9D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_SIU_PROGRAMA"
+              DTS:DTSID="{9F882348-11B3-4C3A-B163-0D7FF1B7BC27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_GRUPO_1"
+              DTS:DTSID="{EFC2658F-AF82-46F1-A23A-A5BEB8306997}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE_GRUPO_1"
+              DTS:DTSID="{FD8E8ED4-026D-4A15-B0E9-84D27FF6A749}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_GRUPO_3"
+              DTS:DTSID="{DD60F782-6DF8-4B31-BF67-04504B4FF814}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE_GRUPO_3"
+              DTS:DTSID="{A4A36D5F-9361-497A-8A1B-A93FFBE60A8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE_PROGRAMA"
+              DTS:DTSID="{4161D937-FD44-40CF-AA1A-24DD31C69CE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ES_LOCAL_PRINCIPAL"
+              DTS:DTSID="{7C7C2CBA-5BC5-414D-8EFD-CD594D810C20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_LOCAL"
+              DTS:DTSID="{424C8E55-473F-41F3-AFDF-082DEC454BAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEPARTAMENTO_LOCAL"
+              DTS:DTSID="{8E8A7C54-3C75-4EA2-BC20-ED79B54A4569}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PROVINCIA_LOCAL"
+              DTS:DTSID="{ADA6D422-9FAA-432B-A1F0-56B2B40EF004}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DISTRITO_LOCAL"
+              DTS:DTSID="{9C3969ED-912F-4B41-AFD5-7D72B3322E99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GUID_PERSONA"
+              DTS:DTSID="{59786F55-6F12-4839-B83D-5339EFE8E810}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SEXO"
+              DTS:DTSID="{64A5187D-4623-4116-B344-80E752FE1FE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ANIO_NACIMIENTO"
+              DTS:DTSID="{B7E816DE-C3D3-41B7-AA57-F594A0934BAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EDAD"
+              DTS:DTSID="{2A88AABD-706C-4A95-9E51-106DF48A333F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NACIONALIDAD"
+              DTS:DTSID="{2B2E9235-5F1C-49AE-863D-44DE691473C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEPARTAMENTO_NACIMIENTO"
+              DTS:DTSID="{1D3311E1-99A8-4D16-A688-70537001E380}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ANIO_PERIODO_INGRESO"
+              DTS:DTSID="{8C1E20C7-4988-4E21-8863-1B02A0A032FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_INICIO_PERIODO"
+              DTS:DTSID="{40D4E945-C2EF-4824-82C7-A699753DD992}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_FIN_PERIODO"
+              DTS:DTSID="{1CBA6558-63AB-4E29-B14F-A2FD613A6A78}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_UBIGEO_INEI_LOCAL"
+              DTS:DTSID="{1D0238C5-D51B-4046-A887-E75F7405EEDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CERT_GRAVEDAD"
+              DTS:DTSID="{ED7DED59-8D0B-4F97-A6AE-C7F8A0E30F86}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_COMUNICACION"
+              DTS:DTSID="{C238C31E-FD13-4947-B0EA-BBF02D48EEE3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_CONDUCTA"
+              DTS:DTSID="{D1D68300-B560-4EE8-A639-B578845A5646}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_DESTREZA"
+              DTS:DTSID="{4ADC78BD-318D-4F34-8173-485F5E272E27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_DISPOSICION"
+              DTS:DTSID="{FC4738AF-B136-4DB0-9EE9-BF9E30554FFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_LOCOMOCION"
+              DTS:DTSID="{6F124E97-8509-467D-A56D-9A37E9E971C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DE_SITUACION"
+              DTS:DTSID="{1639BC19-087B-43E7-B2C6-0DEBBCCC8944}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DES_DISCAPACIDAD_DEL_CUIDADO"
+              DTS:DTSID="{C0AACF6C-5AE5-435D-BB7B-A338335F9867}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LocalHost.DWH_UNIVERSIDAD]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C350FA3B-D558-442D-A902-E45A089804C3}"
+      DTS:ObjectName="LocalHost.DWH_UNIVERSIDAD">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=.;Initial Catalog=DWH_UNIVERSIDAD;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-Package-{C350FA3B-D558-442D-A902-E45A089804C3}LocalHost.DWH_UNIVERSIDAD;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CARGA SA_MATRICULAS"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{E1631617-D7F7-4B09-83D3-0D67F2A37917}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CARGA SA_MATRICULAS">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\CARGA SA_MATRICULAS\Data Flow Task"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{3F7A0A1F-DA46-49AD-857E-AAAEEEBC4F17}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Data Flow Task"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="10250"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_INEI]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_INEI]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_INEI]"
+                          name="CODIGO_INEI"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_ENTIDAD]"
+                          length="200"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_ENTIDAD]"
+                          name="NOMBRE_ENTIDAD"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_ENTIDAD]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_ENTIDAD]"
+                          name="TIPO_ENTIDAD"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_GESTION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_GESTION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_GESTION]"
+                          name="TIPO_GESTION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_CONSTITUCION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_CONSTITUCION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_CONSTITUCION]"
+                          name="TIPO_CONSTITUCION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LICENCIA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LICENCIA]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LICENCIA]"
+                          name="LICENCIA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO]"
+                          name="PERIODO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_ESTANDARIZADO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO_ESTANDARIZADO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_ESTANDARIZADO]"
+                          name="PERIODO_ESTANDARIZADO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NIVEL_ACADEMICO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NIVEL_ACADEMICO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NIVEL_ACADEMICO]"
+                          name="NIVEL_ACADEMICO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_LECTIVO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO_LECTIVO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_LECTIVO]"
+                          name="PERIODO_LECTIVO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_SIU_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_SIU_PROGRAMA]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_SIU_PROGRAMA]"
+                          name="CODIGO_SIU_PROGRAMA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_GRUPO_1]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_1]"
+                          name="CODIGO_GRUPO_1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_GRUPO_1]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_1]"
+                          name="NOMBRE_GRUPO_1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_GRUPO_3]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_3]"
+                          name="CODIGO_GRUPO_3"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_GRUPO_3]"
+                          length="200"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_3]"
+                          name="NOMBRE_GRUPO_3"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_PROGRAMA]"
+                          length="200"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_PROGRAMA]"
+                          name="NOMBRE_PROGRAMA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ES_LOCAL_PRINCIPAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ES_LOCAL_PRINCIPAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ES_LOCAL_PRINCIPAL]"
+                          name="ES_LOCAL_PRINCIPAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_LOCAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_LOCAL]"
+                          name="CODIGO_LOCAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTAMENTO_LOCAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_LOCAL]"
+                          name="DEPARTAMENTO_LOCAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PROVINCIA_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROVINCIA_LOCAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PROVINCIA_LOCAL]"
+                          name="PROVINCIA_LOCAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DISTRITO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DISTRITO_LOCAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DISTRITO_LOCAL]"
+                          name="DISTRITO_LOCAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[GUID_PERSONA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GUID_PERSONA]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[GUID_PERSONA]"
+                          name="GUID_PERSONA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SEXO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SEXO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SEXO]"
+                          name="SEXO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ANIO_NACIMIENTO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_NACIMIENTO]"
+                          name="ANIO_NACIMIENTO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[EDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EDAD]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[EDAD]"
+                          name="EDAD"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NACIONALIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NACIONALIDAD]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NACIONALIDAD]"
+                          name="NACIONALIDAD"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTAMENTO_NACIMIENTO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_NACIMIENTO]"
+                          name="DEPARTAMENTO_NACIMIENTO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_PERIODO_INGRESO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ANIO_PERIODO_INGRESO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_PERIODO_INGRESO]"
+                          name="ANIO_PERIODO_INGRESO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_INICIO_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO_PERIODO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_INICIO_PERIODO]"
+                          name="FECHA_INICIO_PERIODO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_FIN_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN_PERIODO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_FIN_PERIODO]"
+                          name="FECHA_FIN_PERIODO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          name="CODIGO_UBIGEO_INEI_LOCAL"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CERT_GRAVEDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CERT_GRAVEDAD]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CERT_GRAVEDAD]"
+                          name="CERT_GRAVEDAD"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          name="DES_DISCAPACIDAD_DE_COMUNICACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          name="DES_DISCAPACIDAD_DE_CONDUCTA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          name="DES_DISCAPACIDAD_DE_DESTREZA"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          name="DES_DISCAPACIDAD_DE_DISPOSICION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          name="DES_DISCAPACIDAD_DE_LOCOMOCION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          name="DES_DISCAPACIDAD_DE_SITUACION"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          length="50"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          name="DES_DISCAPACIDAD_DEL_CUIDADO"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_INEI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_INEI" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NOMBRE_ENTIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_ENTIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_GESTION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_GESTION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_CONSTITUCION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_CONSTITUCION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LICENCIA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LICENCIA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO_ESTANDARIZADO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO_ESTANDARIZADO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NIVEL_ACADEMICO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NIVEL_ACADEMICO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PERIODO_LECTIVO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO_LECTIVO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_SIU_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_SIU_PROGRAMA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_GRUPO_1" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NOMBRE_GRUPO_1" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_GRUPO_3" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NOMBRE_GRUPO_3" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NOMBRE_PROGRAMA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ES_LOCAL_PRINCIPAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ES_LOCAL_PRINCIPAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTAMENTO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DEPARTAMENTO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROVINCIA_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PROVINCIA_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DISTRITO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DISTRITO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GUID_PERSONA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="GUID_PERSONA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SEXO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SEXO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ANIO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ANIO_NACIMIENTO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NACIONALIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NACIONALIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEPARTAMENTO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DEPARTAMENTO_NACIMIENTO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ANIO_PERIODO_INGRESO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ANIO_PERIODO_INGRESO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_INICIO_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHA_INICIO_PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_FIN_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHA_FIN_PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_UBIGEO_INEI_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CERT_GRAVEDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CERT_GRAVEDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_COMUNICACION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_CONDUCTA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_DESTREZA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_DISPOSICION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_LOCOMOCION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_SITUACION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DEL_CUIDADO" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[SA_MATRICULAS]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LocalHost.DWH_UNIVERSIDAD]"
+                      connectionManagerRefId="Package.ConnectionManagers[LocalHost.DWH_UNIVERSIDAD]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_INEI]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_INEI"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_INEI]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_INEI]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE_ENTIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="NOMBRE_ENTIDAD"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_ENTIDAD]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_ENTIDAD]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_ENTIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TIPO_ENTIDAD"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_ENTIDAD]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_ENTIDAD]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_GESTION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TIPO_GESTION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_GESTION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_GESTION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_CONSTITUCION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="TIPO_CONSTITUCION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CONSTITUCION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_CONSTITUCION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LICENCIA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="LICENCIA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LICENCIA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[LICENCIA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERIODO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PERIODO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERIODO_ESTANDARIZADO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PERIODO_ESTANDARIZADO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO_ESTANDARIZADO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_ESTANDARIZADO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NIVEL_ACADEMICO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="NIVEL_ACADEMICO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NIVEL_ACADEMICO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NIVEL_ACADEMICO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PERIODO_LECTIVO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PERIODO_LECTIVO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO_LECTIVO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PERIODO_LECTIVO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_SIU_PROGRAMA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_SIU_PROGRAMA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_SIU_PROGRAMA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_SIU_PROGRAMA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_GRUPO_1]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_GRUPO_1"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_GRUPO_1]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_1]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE_GRUPO_1]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="NOMBRE_GRUPO_1"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_GRUPO_1]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_1]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_GRUPO_3]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_GRUPO_3"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_GRUPO_3]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_GRUPO_3]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE_GRUPO_3]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="NOMBRE_GRUPO_3"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_GRUPO_3]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_GRUPO_3]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE_PROGRAMA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="NOMBRE_PROGRAMA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_PROGRAMA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE_PROGRAMA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ES_LOCAL_PRINCIPAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ES_LOCAL_PRINCIPAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ES_LOCAL_PRINCIPAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ES_LOCAL_PRINCIPAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_LOCAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_LOCAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_LOCAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_LOCAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPARTAMENTO_LOCAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DEPARTAMENTO_LOCAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTAMENTO_LOCAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_LOCAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROVINCIA_LOCAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="PROVINCIA_LOCAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROVINCIA_LOCAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PROVINCIA_LOCAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DISTRITO_LOCAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DISTRITO_LOCAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRITO_LOCAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DISTRITO_LOCAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GUID_PERSONA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="GUID_PERSONA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GUID_PERSONA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[GUID_PERSONA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SEXO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SEXO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SEXO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[SEXO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ANIO_NACIMIENTO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ANIO_NACIMIENTO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANIO_NACIMIENTO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_NACIMIENTO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="EDAD"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EDAD]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[EDAD]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NACIONALIDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="NACIONALIDAD"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NACIONALIDAD]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[NACIONALIDAD]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEPARTAMENTO_NACIMIENTO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DEPARTAMENTO_NACIMIENTO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTAMENTO_NACIMIENTO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DEPARTAMENTO_NACIMIENTO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ANIO_PERIODO_INGRESO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ANIO_PERIODO_INGRESO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANIO_PERIODO_INGRESO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[ANIO_PERIODO_INGRESO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_INICIO_PERIODO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FECHA_INICIO_PERIODO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_INICIO_PERIODO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_INICIO_PERIODO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_FIN_PERIODO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="FECHA_FIN_PERIODO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_FIN_PERIODO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_FIN_PERIODO]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CODIGO_UBIGEO_INEI_LOCAL"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_UBIGEO_INEI_LOCAL]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CERT_GRAVEDAD]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CERT_GRAVEDAD"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CERT_GRAVEDAD]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CERT_GRAVEDAD]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_COMUNICACION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_COMUNICACION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_CONDUCTA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_CONDUCTA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_DESTREZA"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DESTREZA]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_DISPOSICION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_DISPOSICION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_LOCOMOCION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_LOCOMOCION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DE_SITUACION"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DE_SITUACION]" />
+                        <inputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="DES_DISCAPACIDAD_DEL_CUIDADO"
+                          externalMetadataColumnId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[DES_DISCAPACIDAD_DEL_CUIDADO]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_INEI]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_INEI" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="NOMBRE_ENTIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_ENTIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_ENTIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_GESTION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_GESTION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CONSTITUCION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="TIPO_CONSTITUCION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LICENCIA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="LICENCIA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO_ESTANDARIZADO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO_ESTANDARIZADO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NIVEL_ACADEMICO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NIVEL_ACADEMICO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PERIODO_LECTIVO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PERIODO_LECTIVO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_SIU_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_SIU_PROGRAMA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_GRUPO_1" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_GRUPO_1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NOMBRE_GRUPO_1" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_GRUPO_3" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_GRUPO_3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NOMBRE_GRUPO_3" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_PROGRAMA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="NOMBRE_PROGRAMA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ES_LOCAL_PRINCIPAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ES_LOCAL_PRINCIPAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTAMENTO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DEPARTAMENTO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROVINCIA_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="PROVINCIA_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DISTRITO_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DISTRITO_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GUID_PERSONA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="GUID_PERSONA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SEXO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SEXO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANIO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ANIO_NACIMIENTO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="EDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NACIONALIDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="NACIONALIDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEPARTAMENTO_NACIMIENTO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DEPARTAMENTO_NACIMIENTO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANIO_PERIODO_INGRESO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ANIO_PERIODO_INGRESO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_INICIO_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHA_INICIO_PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_FIN_PERIODO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="FECHA_FIN_PERIODO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_UBIGEO_INEI_LOCAL]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CODIGO_UBIGEO_INEI_LOCAL" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CERT_GRAVEDAD]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CERT_GRAVEDAD" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_COMUNICACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_COMUNICACION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_CONDUCTA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_CONDUCTA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_DESTREZA]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_DESTREZA" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_DISPOSICION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_DISPOSICION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_LOCOMOCION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_LOCOMOCION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DE_SITUACION]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DE_SITUACION" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DES_DISCAPACIDAD_DEL_CUIDADO]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="DES_DISCAPACIDAD_DEL_CUIDADO" />
+                        <externalMetadataColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CARGA]"
+                          dataType="dbTimeStamp"
+                          name="FECHA_CARGA" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\CARGA SA_MATRICULAS\Data Flow Task.Paths[Flat File Source Output]"
+                  endId="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\CARGA SA_MATRICULAS\Data Flow Task"
+          TopLeft="84.6333193552169,64.3333320014344" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="305.6,184"
+          Size="305.6,227.2"
+          Id="Package\CARGA SA_MATRICULAS"
+          TopLeft="170.833323999411,84.0666660820775" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CARGA SA_MATRICULAS\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\CARGA SA_MATRICULAS\Data Flow Task\Flat File Source"
+          TopLeft="381.66664581332,135.199999059836" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination"
+          TopLeft="364.166646769478,252.199998246233" />
+        <EdgeLayout
+          Id="Package\CARGA SA_MATRICULAS\Data Flow Task.Paths[Flat File Source Output]"
+          TopLeft="453.516646291399,176.799999059836">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,75.3999991863966"
+              Start="0,0"
+              End="0,67.8999991863966">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,67.8999991863966" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CARGA SA_MATRICULAS\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
